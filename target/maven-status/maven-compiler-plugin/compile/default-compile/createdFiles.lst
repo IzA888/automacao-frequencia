@@ -1,0 +1,10 @@
+com\app\automacaofrequencia\ui\CorrecaoView.class
+com\app\automacaofrequencia\service\RelatorioService.class
+com\app\automacaofrequencia\service\AutomacaoNotas.class
+com\app\automacaofrequencia\ui\GabaritoView.class
+com\app\automacaofrequencia\model\Aluno.class
+com\app\automacaofrequencia\service\CSVUtils.class
+com\app\automacaofrequencia\service\CorretorProvas.class
+com\app\automacaofrequencia\model\Gabarito.class
+com\app\automacaofrequencia\ui\MainApp.class
+com\app\automacaofrequencia\ui\ResultadosView.class

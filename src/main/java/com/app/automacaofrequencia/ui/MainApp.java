@@ -4,13 +4,13 @@ import com.app.automacaofrequencia.model.Aluno;
 import com.app.automacaofrequencia.model.Gabarito;
 import com.app.automacaofrequencia.ui.GabaritoView;
 import com.app.automacaofrequencia.ui.ResultadosView;
+import com.app.automacaofrequencia.ui.CorrecaoView;
 
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
-import com.app.automacaofrequencia.ui.CorrecaoView;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -65,6 +65,6 @@ public class MainApp extends Application {
         mostrarMenuPrincipal();
     }
     public static void main(String[] args) {
-        launch();
+        launch(args);
     }
 }
