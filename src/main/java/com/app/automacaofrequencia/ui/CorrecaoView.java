@@ -1,6 +1,7 @@
-package main.java.com.app.automacaofrequencia.ui;
+package com.app.automacaofrequencia.ui;
 
 import com.app.automacaofrequencia.model.Aluno;
+import com.app.automacaofrequencia.service.CSVUtils;
 import com.app.automacaofrequencia.service.CorretorProvas;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -80,7 +81,7 @@ public class CorrecaoView {
 
         CorretorProvas corretor = new CorretorProvas();
         for (Aluno aluno : dados) {
-            corretor.corrigir(aluno, app.getGabarito());
+            corretor.corrigirProvas(aluno, app.getGabarito());
         }
 
         app.setAlunosCorrigidos(dados);

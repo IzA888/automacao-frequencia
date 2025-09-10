@@ -1,4 +1,4 @@
-
+package com.app.automacaofrequencia.ui;
 
 import com.app.automacaofrequencia.model.Aluno;
 import com.app.automacaofrequencia.model.Gabarito;
@@ -10,7 +10,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
-import main.java.com.app.automacaofrequencia.ui.CorrecaoView;
+import com.app.automacaofrequencia.ui.CorrecaoView;
 
 import java.util.ArrayList;
 import java.util.List;

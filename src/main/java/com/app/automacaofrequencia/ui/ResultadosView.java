@@ -71,7 +71,7 @@ public class ResultadosView {
         if (file != null) {
             try {
                 RelatorioService relatorio = new RelatorioService();
-                relatorio.exportarCSV(dados, file.getAbsolutePath());
+                relatorio.exportarCorrecoesCSV(dados, file.getAbsolutePath());
                 mostrarAlerta("Sucesso", "CSV exportado!");
             } catch (Exception ex) {
                 mostrarAlerta("Erro", "Falha ao exportar: " + ex.getMessage());
@@ -88,7 +88,7 @@ public class ResultadosView {
         if (file != null) {
             try {
                 RelatorioService relatorio = new RelatorioService();
-                relatorio.exportarPDF(dados, file.getAbsolutePath());
+                relatorio.exportarCorrecoesPDF(dados, file.getAbsolutePath());
                 mostrarAlerta("Sucesso", "PDF exportado!");
             } catch (Exception ex) {
                 mostrarAlerta("Erro", "Falha ao exportar: " + ex.getMessage());

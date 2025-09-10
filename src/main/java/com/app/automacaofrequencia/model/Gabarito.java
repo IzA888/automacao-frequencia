@@ -1,17 +1,19 @@
+package com.app.automacaofrequencia.model;
 
+import java.util.List;
 
 public class Gabarito {
-    private List<String> respostas;
+    private List<Double> respostas;
 
-    public Gabarito(List<String> respostas) {
+    public Gabarito(List<Double> respostas) {
         this.respostas = respostas;
     }
 
-    public List<String> getRespostas() {
+    public List<Double> getRespostas() {
         return respostas;
     }
 
-    public void setRespostas(List<String> respostas) {
+    public void setRespostas(List<Double> respostas) {
         this.respostas = respostas;
     }
 }

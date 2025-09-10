@@ -1,4 +1,4 @@
-package main.java.com.app.automacaofrequencia.service;
+package com.app.automacaofrequencia.service;
 
 import com.app.automacaofrequencia.model.Aluno;
 

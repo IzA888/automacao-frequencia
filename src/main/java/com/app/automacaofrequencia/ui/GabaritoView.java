@@ -41,13 +41,14 @@ public class GabaritoView {
 
         Button btnSalvar = new Button("Salvar Gabarito");
         btnSalvar.setOnAction(e -> {
-            List<String> respostas = new ArrayList<>();
+            List<Double> respostas = new ArrayList<>();
             for (TextField campo : campos) {
-                if (campo.getText().isEmpty()) {
-                    mostrarAlerta("Erro", "Preencha todas as respostas!");
+                try {
+                    respostas.add(Double.parseDouble(campo.getText()));
+                } catch (NumberFormatException ex) {
+                    mostrarAlerta("Erro", "Digite apenas números nas respostas!");
                     return;
                 }
-                respostas.add(campo.getText().toUpperCase());
             }
             app.setGabarito(new Gabarito(respostas));
             mostrarAlerta("Sucesso", "Gabarito salvo!");
